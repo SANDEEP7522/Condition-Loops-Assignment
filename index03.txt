@@ -1,0 +1,56 @@
+Loops in programming are control structures that allow you to execute a block of code repeatedly based on a certain condition. They are essential for automating repetitive tasks and iterating over collections of data such as arrays or objects.
+
+There are several types of loops in JavaScript:
+
+for loop: This loop iterates a specified number of times.
+Syntax:
+for (initialization; condition; iteration) {
+    // code block to be executed
+}
+Example:
+for (let i = 0; i < 5; i++) {
+    console.log(i);
+}
+while loop: This loop repeats a block of code as long as a specified condition is true.
+Syntax:
+while (condition) {
+    // code block to be executed
+}
+Example:
+let i = 0;
+while (i < 5) {
+    console.log(i);
+    i++;
+}
+do-while loop: Similar to a while loop, but it ensures that the code block is executed at least once before the condition is tested.
+Syntax:
+do {
+    // code block to be executed
+} while (condition);
+Example:
+let i = 0;
+do {
+    console.log(i);
+    i++;
+} while (i < 5);
+for...in loop: This loop iterates over the enumerable properties of an object.
+Syntax:
+for (variable in object) {
+    // code block to be executed
+}
+Example:
+const person = {name: "monu", age: 30, city: "prayagraj"};
+for (let key in person) {
+    console.log(key + ": " + person[key]);
+}
+for...of loop: This loop iterates over the values of an iterable object such as arrays, strings, etc.
+Syntax:
+for (variable of iterable) {
+    // code block to be executed
+}
+Example:
+const numbers = [1, 2, 3, 4, 5];
+for (let number of numbers) {
+    console.log(number);
+}
+These loops are powerful tools in JavaScript for iterating over data, controlling program flow, and automating repetitive tasks. Depending on the scenario, you can choose the appropriate loop construct to achieve your desired functionality.
